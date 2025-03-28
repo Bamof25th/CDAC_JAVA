@@ -1,0 +1,71 @@
+package com.customer.services;
+
+import java.time.LocalDate;
+
+import com.customer.core.Customer;
+import com.customer.utils.Plans;
+
+class CustomerMain implements CustomerIntf {
+
+	Customer[] users;
+	int count = 0;
+
+	CustomerMain(int size) {
+		users = new Customer[size];
+		System.out.println("users Array Created");
+	}
+
+	@Override
+	public String createUser(String fname, String lname, String email, String password, double regAmt, String dob,
+			Plans p) {
+		try {
+			if (count < users.length) {
+				users[count] = new Customer(fname, lname, email, password, regAmt, LocalDate.parse(dob), p);
+				count++;
+				return "User Created";
+			} else {
+				return "DataBase full please come again later";
+			}
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+
+	}
+
+	@Override
+	public void getUsers() {
+		// TODO Auto-generated method stub
+		for (Customer user : users) {
+			System.out.println(user);
+		}
+	};
+
+	@Override
+	public void getUserDetails(int idx) {
+		if (idx >= 0 && idx <= count) {
+			System.out.println(users[idx]);
+		} else {
+			System.out.println("user not available");
+		}
+	}
+
+	@Override
+	public String userLogin(String email, String password) {
+		return null;
+	}
+
+	
+	
+	@Override
+	public boolean deleteUser() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void dupeUsers(String email) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

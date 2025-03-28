@@ -1,0 +1,7 @@
+package com.banking.services;
+
+public interface BankingOperation {
+	void BankAccount(int acno , String fName , String Lname , double balance , String accType);
+	void getBalance();
+	void DoWithdrawl();
+}

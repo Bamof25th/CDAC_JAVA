@@ -1,0 +1,72 @@
+package com.event.tester;
+
+import java.util.Scanner;
+
+import com.event.fruit.Alphonso;
+import com.event.fruit.Apple;
+import com.event.fruit.Fruit;
+import com.event.fruit.Mango;
+import com.event.fruit.Orange;
+
+public class TestMaimFruit {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Put in size of your basket:");
+		Fruit[] fruits = new Fruit[scn.nextInt()];
+		int counter = 0;
+		boolean exit = false;
+		while(!exit) {
+				System.out.println(
+						"Please select what to keep in your basket "
+						+"1.Select Apple 1"
+						+"2.Select orange 2"
+						+"3.select mango 3"
+						+"4.select Alphonso in Mango 4"
+						+"Exit Done Shopping Press 0"
+						);
+			switch (scn.nextInt()) {
+			case 1:
+				if( counter > fruits.length-1) {
+					System.out.println("selectec Apple");
+					for(Fruit f : fruits) {
+						fruits[counter] = new Apple("Red", scn.nextInt(), "Apple", true);
+						counter++;
+					}
+				}else {
+					System.out.println("Basket Full Please Buy out or Exit!");
+				}
+				break;
+			case 2:
+				if( counter > fruits.length-1) {
+					System.out.println("selectec Apple");
+					for(Fruit f : fruits) {
+						fruits[counter] = new Orange("Orange", scn.nextInt(), "ORANGE", true);
+						counter++;
+					}
+				}else {
+					System.out.println("Basket Full Please Buy out or Exit!");
+				}
+				break;
+			case 3:
+				if( counter > fruits.length-1) {
+					System.out.println("selectec Apple");
+					for(Fruit f : fruits) {
+						fruits[counter] = new Mango("Yellow", scn.nextInt(), "Mango", true);
+						counter++;
+					}
+				}else {
+					System.out.println("Basket Full Please Buy out or Exit!");
+				}
+				break;
+			case 0:
+					exit = true ;
+					System.out.println("Basket Full Please Exitted!");
+				break;
+			default:
+				break;
+			}
+		}
+		
+		
+	}
+}

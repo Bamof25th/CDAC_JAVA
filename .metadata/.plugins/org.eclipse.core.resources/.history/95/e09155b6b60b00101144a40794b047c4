@@ -1,0 +1,30 @@
+package com.customer.core;
+
+import java.time.LocalDate;
+
+import com.customer.utils.Plans;
+
+public class Customer {
+	private int id;
+	private String fname;
+	private String lname;
+	private String email;
+	private String password;
+	private double regAmt;
+	private LocalDate dob;
+	private Plans p;
+
+	public Customer(int id, String fname, String lname, String email, String password, double regAmt, LocalDate dob,
+			Plans p) {
+		super();
+		this.id = id;
+		this.fname = fname;
+		this.lname = lname;
+		this.email = email;
+		this.password = password;
+		this.regAmt = regAmt;
+		this.dob = dob;
+		this.p = p;
+
+	}
+}

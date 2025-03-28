@@ -1,0 +1,19 @@
+package com.event.fruit;
+
+public class Orange extends Fruit {
+
+	public Orange(String color, double weight, String name, boolean isFresh) {
+		super(color, weight, name, isFresh);
+		// TODO Auto-generated constructor stub
+	}
+	public void taste() {
+		System.out.println("Sour");
+	}
+	
+    public void juice() {
+    	System.out.println( super.toString()+  "\n Extracting Juice \n");
+	}
+}
+
+
+

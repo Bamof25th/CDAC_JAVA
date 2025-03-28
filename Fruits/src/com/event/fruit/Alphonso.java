@@ -1,0 +1,17 @@
+package com.event.fruit;
+
+public class Alphonso extends Mango {
+
+	public Alphonso(String color, double weight, String name, boolean isFresh) {
+		super(color, weight, name, isFresh);
+	}
+
+	public void taste() {
+		System.out.println("Very Very Sweet");
+	}
+
+	public void pulp() {
+		// TODO Auto-generated method stub
+		System.out.println(super.toString() + "\n creating  pulp! \n");
+	}
+}

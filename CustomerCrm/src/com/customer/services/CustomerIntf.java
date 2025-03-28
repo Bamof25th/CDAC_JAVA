@@ -1,0 +1,20 @@
+package com.customer.services;
+
+import java.time.LocalDate;
+
+import com.customer.utils.Plans;
+
+public interface CustomerIntf {
+	String createUser(String fname, String lname, String email, String password, double regAmt, String dob, String p);
+
+	void getUsers();
+
+	void getUserDetails(int idx);
+
+	void dupeUsers(String email);
+
+	boolean deleteUser();
+
+	String userLogin(String email, String password);
+
+}

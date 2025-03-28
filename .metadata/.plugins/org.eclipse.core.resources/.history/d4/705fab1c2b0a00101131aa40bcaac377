@@ -1,0 +1,82 @@
+package com.app.core;
+
+public class BankAccount implements CoreBanking {
+	private int acno;
+	private String fName;
+	private String lName;
+	private double balance;
+	private String actype;
+	private static int cnt = 10001;
+	
+	public BankAccount(int acno,String fName, String lName, double balance, String actype) {
+		
+		this.acno = acno;
+		this.fName = fName;
+		this.lName = lName;
+		this.balance = balance;
+		this.actype = actype;
+	}
+
+//	@Override
+//	public BankAccount openAccount(String fname,String lName,String type) {
+//		// TODO Auto-generated method stub
+////		BankAccount b = new BankAccount(fname,lName,10000,type);
+////		return b;
+//	}
+
+
+	public int getAcno() {
+		return acno;
+	}
+
+	public void setAcno(int acno) {
+		this.acno = acno;
+	}
+
+	public String getfName() {
+		return fName;
+	}
+
+	public void setfName(String fName) {
+		this.fName = fName;
+	}
+
+	public String getlName() {
+		return lName;
+	}
+
+	public void setlName(String lName) {
+		this.lName = lName;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public String getActype() {
+		return actype;
+	}
+
+	public void setActype(String actype) {
+		this.actype = actype;
+	}
+
+	@Override
+	public void displayAccounts(BankAccount b) {
+		// TODO Auto-generated method stub
+		System.out.println(b.getAcno());
+		System.out.println(b.getfName());
+		System.out.println(b.getlName());
+		System.out.println(b.getBalance());
+		System.out.println(b.getActype());
+	}
+	@Override
+	public void depositFund(double paise) {
+		this.balance += paise;
+		System.out.println("Deposited Amount :" + paise + "\n" + "Total Balance :" + this.balance);
+	}
+}

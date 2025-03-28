@@ -1,0 +1,56 @@
+package com.app.tester;
+
+import java.util.*;
+
+import com.app.core.BankAccount;
+import com.app.core.CoreBanking;
+
+public class BankingSystem {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Welcome to Bank");
+
+		System.out.println("Enter the no. of Accounts you want to Open.");
+		int no = sc.nextInt();
+		CoreBanking cb[] = new BankAccount[no];
+
+		int cnt = 0;
+		System.out.println("Select the below Options:\n" + "1. Open Bank Account\n" + "2. Display Account\n" + ""+"0. Exit");
+
+		boolean exit = false;
+		while (!exit) {
+			switch (sc.nextInt()) {
+			case 1:
+				System.out.println("Fill the Below Details to Open your Account");
+				if (cnt < cb.length) {
+					
+					cb[cnt] = new BankAccount(sc.nextInt(), sc.next(), sc.next(), sc.nextDouble(), sc.next());
+				}
+				System.out.println("Account Details Updated");
+				cnt++;
+				break;
+			case 2:
+				for (CoreBanking cb1 : cb) {
+					if (cb1 != null)
+						cb1.displayAccounts((BankAccount) cb1);
+				}
+				break;
+			case 3:
+				System.out.println("enter index:");
+				int idx  = sc.nextInt()-1;
+				if(idx > 0 && idx < cnt) {
+					cb[idx].depositFund(sc.nextDouble());
+				}else {
+					System.out.println("Invalid!!");
+				}
+				break;
+			case 0:
+				exit = true;
+				break;
+			default:
+				System.out.println("Invalid Option");
+			}
+		}
+	}
+}

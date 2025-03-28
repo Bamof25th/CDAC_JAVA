@@ -1,0 +1,9 @@
+package com.app.core;
+
+public interface CoreBanking {
+	//BankAccount openAccount(String fname,String lName,String type);
+	void displayAccounts(BankAccount b);
+	
+	public String toString();
+	void depositFund(double paise);
+}

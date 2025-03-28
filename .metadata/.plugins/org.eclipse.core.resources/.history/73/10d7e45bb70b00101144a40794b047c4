@@ -1,0 +1,10 @@
+package com.customer.services;
+
+public interface CustomerIntf {
+	
+	void createUser();
+	void getUsers();
+	boolean userLogin(String email, String Password);
+	void deleteUser();
+	
+}

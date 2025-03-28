@@ -1,0 +1,8 @@
+package com.customer.utils;
+
+public enum Plans {
+	SILVER ,
+	GOLD ,
+	DIAMOND ,
+	PLATINUM ,
+}

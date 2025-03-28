@@ -1,0 +1,10 @@
+package com.banking.utils;
+
+@SuppressWarnings("serial")
+public class ExceptionValidators extends Exception {
+
+	public ExceptionValidators(String msg) {
+		super(msg);
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.event.fruit.Apple"/>
+    <fullyQualifiedTypeName name="com.event.fruit.Orange"/>
+    <fullyQualifiedTypeName name="com.event.fruit.Mango"/>
+    <fullyQualifiedTypeName name="com.event.fruit.Fruit"/>
+    <fullyQualifiedTypeName name="com.event.fruit.Alphonso"/>
+    <fullyQualifiedTypeName name="com.banking.services.BankingOperation"/>
+    <fullyQualifiedTypeName name="com.banking.services.BankOperationImpl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.banking.main.BankAccount"/>
+    <fullyQualifiedTypeName name="com.banking.utils.ExceptionValidators"/>
+    <fullyQualifiedTypeName name="com.banking.utils.BalanceException"/>
+    <fullyQualifiedTypeName name="com.banking.utils.BalanceValidator"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.banking.Exceptions.BalanceException"/>
+    <fullyQualifiedTypeName name="java.time.Period"/>
+    <fullyQualifiedTypeName name="com.banking.Exceptions.AgeException"/>
+    <fullyQualifiedTypeName name="java.lang.Long"/>
+    <fullyQualifiedTypeName name="com.banking.utils.AgeValidator"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.customer.core.Customer"/>
+    <fullyQualifiedTypeName name="com.customer.handlers.CmsException"/>
+    <fullyQualifiedTypeName name="com.customer.utils.Plans"/>
+    <fullyQualifiedTypeName name="com.customer.utils.PlanValidator"/>
+</qualifiedTypeNameHistroy>

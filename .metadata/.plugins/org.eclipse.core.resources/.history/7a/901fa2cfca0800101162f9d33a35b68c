@@ -1,0 +1,12 @@
+package com.event.fruit;
+
+public class Alphonso extends Mango{
+
+	public Alphonso(String color, double weight, String name, boolean isFresh) {
+		super(color, weight, name, isFresh);
+	}
+	@Override
+	public String toString() {
+		return "Fruit:"+ super.toString();
+	}
+}
