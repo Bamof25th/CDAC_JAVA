@@ -1,8 +1,0 @@
-package com.banking.Exceptions;
-
-@SuppressWarnings("serial")
-public class AgeException extends Exception {
-	AgeException(String msg){
-		super(msg);
-	}
-}

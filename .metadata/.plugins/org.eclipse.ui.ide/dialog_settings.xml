@@ -111,6 +111,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\JAVA_DAC\day10_data\code\day10_cms2"/>
 			<item value="D:\JAVA_DAC\day8_data\code\day8.1"/>
 			<item value="D:\Day6"/>
 			<item value="C:\Users\thesh\Downloads\Day6-20250325T174856Z-001\bank"/>

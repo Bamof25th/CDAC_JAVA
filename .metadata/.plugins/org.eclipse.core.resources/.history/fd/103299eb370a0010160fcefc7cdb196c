@@ -1,9 +1,0 @@
-package com.banking.services;
-
-public class BankOperation {
-
-	public BankOperation() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

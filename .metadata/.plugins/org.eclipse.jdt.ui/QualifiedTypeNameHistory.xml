@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="com.banking.services.BankingOperation"/>
     <fullyQualifiedTypeName name="com.banking.services.BankOperationImpl"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="com.banking.main.BankAccount"/>
     <fullyQualifiedTypeName name="com.banking.utils.ExceptionValidators"/>
     <fullyQualifiedTypeName name="com.banking.utils.BalanceException"/>
     <fullyQualifiedTypeName name="com.banking.utils.BalanceValidator"/>
@@ -25,4 +24,9 @@
     <fullyQualifiedTypeName name="com.customer.handlers.CmsException"/>
     <fullyQualifiedTypeName name="com.customer.utils.Plans"/>
     <fullyQualifiedTypeName name="com.customer.utils.PlanValidator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.banking.main.BankAccount"/>
+    <fullyQualifiedTypeName name="java.lang.Enum"/>
+    <fullyQualifiedTypeName name="com.banking.utils.AccTypes"/>
 </qualifiedTypeNameHistroy>
